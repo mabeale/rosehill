@@ -1,10 +1,13 @@
 import React from "react";
 import { connect, styled } from "frontity";
 
-const Link = ({ href, actions, children }) => {
+const Link = ({ state, href, actions, children }) => {
+  const { mode } = state.theme;
+  const isDarkMode = mode === 'dark';
   return (
     <div>
       <Anchor
+        isDark={isDarkMode}
         href={href}
         onClick={event => {
           event.preventDefault();
@@ -21,5 +24,5 @@ const Link = ({ href, actions, children }) => {
 export default connect(Link);
 
 const Anchor = styled.a`
-  color: steelblue;
+  color: ${({ isDark }) => ( isDark ? '#eee' : 'steelblue')};
 `;
