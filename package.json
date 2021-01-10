@@ -19,6 +19,7 @@
     "@frontity/tiny-router": "^1.2.0",
     "@frontity/wp-source": "^1.7.1",
     "frontity": "^1.7.0",
+    "frontity-chakra-theme": "./packages/frontity-chakra-theme",
     "rosehill-theme": "file:packages/rosehill-theme"
   }
 }

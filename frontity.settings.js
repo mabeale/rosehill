@@ -11,6 +11,7 @@ const settings = {
   packages: [
     {
       name: "rosehill-theme",
+      //name: "frontity-chakra-theme",
     },
     {
       name: "@frontity/wp-source",
